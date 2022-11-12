@@ -1,0 +1,56 @@
+unit shot;
+
+interface
+
+uses Vcl.ExtCtrls
+    , Drawable
+    ;
+
+type
+TShot = class(TInterfacedObject, IDrawable<TShot>)
+  private
+    FX, FY : UInt8;
+    FExploding: boolean;
+    FTimer: TTimer;
+  public
+    constructor Create(x,y: UInt8);
+    procedure Update(delta: Duration);
+    procedure Explode();
+    procedure Dead();
+    procedure Draw(Item: TShot);
+
+  end;
+
+implementation
+
+{ TShot }
+
+constructor TShot.Create(x, y: UInt8);
+begin
+  FX := x;
+  FY := y;
+  FExploding:= false;
+  FTimer.Interval := 50;
+end;
+
+procedure TShot.Dead;
+begin
+
+end;
+
+procedure TShot.Draw(Item: TShot);
+begin
+
+end;
+
+procedure TShot.Explode;
+begin
+
+end;
+
+procedure TShot.Update(delta: Duration);
+begin
+
+end;
+
+end.

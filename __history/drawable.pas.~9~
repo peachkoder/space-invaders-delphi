@@ -1,0 +1,13 @@
+unit drawable;
+
+interface
+
+type
+
+IDrawable<T> = interface
+  procedure Draw(Item: T);
+end;
+
+implementation
+
+end.

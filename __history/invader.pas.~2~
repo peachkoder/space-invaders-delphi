@@ -1,0 +1,20 @@
+unit invader;
+
+interface
+
+uses Drawable
+    , Frame
+    ;
+
+type
+
+  TInvader = record
+    X, Y  : UInt32;
+    Point : UInt16;
+  end;
+
+  TInvaders = class(TInterfacedObject, IDrawable<TFrame>)
+
+implementation
+
+end.

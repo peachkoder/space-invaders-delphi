@@ -1,0 +1,11 @@
+unit drawable;
+
+interface
+
+IDrawable = interface
+   procedure Draw(Frame: TFrame);
+end;
+
+implementation
+
+end.

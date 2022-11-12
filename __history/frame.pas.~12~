@@ -1,0 +1,51 @@
+unit frame;
+
+interface
+
+uses drawable;
+
+const NUM_COLS  = 80;
+const NUM_ROWS  = 40;
+
+type
+
+TFrame = class(TInterfacedObject, IInterface)
+private
+  FGrid: Array[1..NUM_ROWS, 1..NUM_COLS] of char;
+  procedure Draw(Item: TFrame);
+public
+  constructor Create;
+  procedure setChar(x, y : UInt8; c: char);
+  function getChar(x, y : UInt8) : char;
+end;
+
+implementation
+
+{ TFrame }
+
+constructor TFrame.Create;
+var
+  I: Integer;
+  II: Integer;
+begin
+  for I := 1 to NUM_COLS do
+    for II := 1 to NUM_ROWS do
+      FGrid[i,ii] := char(' ');
+end;
+
+procedure TFrame.Draw(Item: TFrame);
+begin
+
+end;
+
+function TFrame.getChar(x, y: UInt8): char;
+begin
+
+end;
+
+procedure TFrame.setChar(x, y: UInt8; c: char);
+begin
+
+end;
+
+end.

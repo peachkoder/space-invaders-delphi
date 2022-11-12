@@ -1,0 +1,14 @@
+unit drawable;
+
+interface
+
+uses frame;
+
+IDrawable = interface
+  const x : String = "";
+   procedure Draw(Frame: TFrame);
+end;
+
+implementation
+
+end.

@@ -1,0 +1,14 @@
+unit drawable;
+
+interface
+
+uses frame;
+
+IDrawable = interface
+  const NUM_COLS : uInt8;
+   procedure Draw(Frame: TFrame);
+end;
+
+implementation
+
+end.
